@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 6.25%; /* 1rem = 1px :)*/
+
+  /* variaveis de cores */
+  --primary-color: hsl(170, 100%, 26%);
+  --headline: hsl(210, 11%, 15%);
+  --paragraph: hsla(210, 9%, 31%, 1);
+
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16rem;
+  text-align: center;
+}
+
+header {
+  width: 375rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 42rem;
+}
+
+header #home-mobile-img {
+  width: 375rem;
+}
+
+h4 {
+  font-size: 14rem;
+  color: var(--primary-color);
+  margin-bottom: 16rem;
+}
+
+h1 {
+  font-size: 34rem;
+  color: var(--headline);
+  line-height: 130%;
+  font-weight: 700;
+  margin-bottom: 24rem;
+
+}
+
+p {
+  font-size: 18rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--paragraph);
+  margin-bottom: 32rem;
+
+}
+
+button {
+  background: var(--primary-color);
+  width: 263rem;
+  height: 62rem;
+  
+  border: none;
+  border-radius: 40rem;
+  margin-bottom: 60rem;
+
+  color: white;
+  text-transform: uppercase;
+  font-size: 14rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16rem;
+
+  margin-right: auto;
+  margin-left: auto;
+}
