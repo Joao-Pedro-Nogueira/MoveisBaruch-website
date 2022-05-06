@@ -8,8 +8,11 @@
 
   /* variaveis de cores */
   --primary-color: hsl(170, 100%, 26%);
+  --button-hover: hsla(170, 100%, 26%, 0.85);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsla(210, 9%, 31%, 1);
+  --brand-beige: hsl(39, 100%, 97%);
+  --brand-light: hsl(148, 23%, 89%);
 
 }
 
@@ -71,7 +74,36 @@ button {
   align-items: center;
   justify-content: center;
   gap: 16rem;
+  cursor: pointer;
 
   margin-right: auto;
   margin-left: auto;
+
+  transition: 0.3s;
 }
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+.stats {
+  width: 327rem;
+  padding-block: 40rem;
+  margin-inline: auto;
+  background-color: var(--brand-beige);
+  border: 1px solid var(--brand-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60rem;
+}
+
+.stat h3 {
+  font-size: 48rem;
+  color: var(--headline);
+}
+
+.stat p {
+  margin: 0;
+}
+
