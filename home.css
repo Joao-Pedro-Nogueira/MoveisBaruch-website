@@ -8,11 +8,12 @@
 
   /* variaveis de cores */
   --primary-color: hsl(170, 100%, 26%);
+<<<<<<< HEAD
   --button-hover: hsla(170, 100%, 26%, 0.8);
+=======
+>>>>>>> parent of 10ff9b9 (mod: home.html home.css)
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsla(210, 9%, 31%, 1);
-  --brand-beige: hsl(39, 100%, 97%);
-  --brand-light: hsl(148, 23%, 89%);
 
 }
 
@@ -97,10 +98,10 @@ p {
   align-items: center;
   justify-content: center;
   gap: 16rem;
-  cursor: pointer;
 
   margin-right: auto;
   margin-left: auto;
+<<<<<<< HEAD
 
   transition: 0.3s;
 }
@@ -141,4 +142,6 @@ header::before { /*cria um elemento antes do conteúdo do header*/
   top: 0;
   left: 0;
   z-index: -1;
+=======
+>>>>>>> parent of 10ff9b9 (mod: home.html home.css)
 }
