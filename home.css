@@ -8,7 +8,7 @@
 
   /* variaveis de cores */
   --primary-color: hsl(170, 100%, 26%);
-  --button-hover: hsla(170, 100%, 26%, 0.85);
+  --button-hover: hsla(170, 100%, 26%, 0.8);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsla(210, 9%, 31%, 1);
   --brand-beige: hsl(39, 100%, 97%);
@@ -20,6 +20,29 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 16rem;
   text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+nav img {
+  height: 25rem;
+  width: 25rem;
+}
+
+nav a h2 {
+  font-family: 'Poppings', sans-serif;
+  font-weight: 700;
+  color: var(--headline);
+}
+
+nav a h2 span {
+  font-weight: 900;
+  color: var(--primary-color);
 }
 
 header {
@@ -57,7 +80,7 @@ p {
 
 }
 
-button {
+.button {
   background: var(--primary-color);
   width: 263rem;
   height: 62rem;
@@ -107,3 +130,15 @@ button:hover {
   margin: 0;
 }
 
+header::before { /*cria um elemento antes do conteúdo do header*/
+  content: "";
+  width: 100vw;
+  height: 1080rem;
+  background-color: var(--brand-light);
+  
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
