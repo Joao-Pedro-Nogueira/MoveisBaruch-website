@@ -1,11 +1,13 @@
+/* ======= RESET ============================================ */
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
+/* ======= GENERAL CONFIG ============================================ */
 :root {
   font-size: 6.25%; /* 1rem = 1px :)*/
-
+  
   /* variaveis de cores */
   --primary-color: hsl(170, 100%, 26%);
   --button-hover: hsla(170, 100%, 26%, 0.85);
@@ -14,6 +16,9 @@
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
 
+  /* Variáveis de navegação */
+  --nav-height: 72rem;
+  
 }
 
 body {
@@ -22,11 +27,35 @@ body {
   text-align: center;
 }
 
+/* ======= NAVEGATION ============================================ */
 nav {
+  font-family: 'Poppings', sans-serif;
+
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 375rem;
+  height: var(--nav-height); 
+  padding: 16rem 24rem;
+  margin: 0 auto;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav a h2 {
+  font-size: 33rem;
+  font-weight: 700;
+  color: var(--headline);
+}
+
+nav a h2 span {
+  font-weight: 800;
+  color: var(--primary-color);
 }
 
 nav img {
@@ -34,17 +63,19 @@ nav img {
   width: 25rem;
 }
 
-nav a h2 {
-  font-family: 'Poppings', sans-serif;
-  font-weight: 700;
-  color: var(--headline);
+/* ======= HEADER ============================================ */
+header::before { /*cria um elemento antes do conteúdo do header*/
+  content: "";
+  width: 100vw;
+  height: 1080rem;
+  background-color: var(--brand-light);
+  
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-
-nav a h2 span {
-  font-weight: 900;
-  color: var(--primary-color);
-}
-
 
 header {
   width: 375rem;
@@ -53,32 +84,29 @@ header {
   margin-top: 42rem;
 }
 
-header #home-mobile-img {
-  width: 375rem;
-}
 
-h4 {
+header h4 {
   font-size: 14rem;
   color: var(--primary-color);
   margin-bottom: 16rem;
 }
 
-h1 {
+header h1 {
   font-size: 34rem;
   color: var(--headline);
   line-height: 130%;
   font-weight: 700;
   margin-bottom: 24rem;
-
+  
 }
 
-p {
+header p {
   font-size: 18rem;
   line-height: 150%;
   font-weight: 400;
   color: var(--paragraph);
   margin-bottom: 32rem;
-
+  
 }
 
 button {
@@ -89,25 +117,29 @@ button {
   border: none;
   border-radius: 40rem;
   margin-bottom: 60rem;
-
+  
   color: white;
   text-transform: uppercase;
   font-size: 14rem;
-
+  
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16rem;
   cursor: pointer;
-
+  
   margin-right: auto;
   margin-left: auto;
-
+  
   transition: 0.3s;
 }
 
-button:hover {
+header button:hover {
   background-color: var(--button-hover);
+}
+
+header #home-mobile-img {
+  width: 375rem;
 }
 
 .stats {
@@ -131,15 +163,3 @@ button:hover {
   margin: 0;
 }
 
-header::before { /*cria um elemento antes do conteúdo do header*/
-  content: "";
-  width: 100vw;
-  height: 1080rem;
-  background-color: var(--brand-light);
-  
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
