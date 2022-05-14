@@ -21,30 +21,50 @@
   
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 16rem;
   text-align: center;
 }
 
+.wrapper {
+  width: 375rem;
+  height: var(--nav-height); 
+  padding: 16rem 24rem;
+  margin: 0 auto;
+}
+
 /* ======= NAVEGATION ============================================ */
 nav {
   font-family: 'Poppings', sans-serif;
+  
+  display: flex;
+  
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
+nav.wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
-  width: 375rem;
-  height: var(--nav-height); 
-  padding: 16rem 24rem;
-  margin: 0 auto;
+}
 
+nav.scroll {
+  background: var(--primary-color);
+  width: 100vw;
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 nav a h2 {
@@ -52,10 +72,17 @@ nav a h2 {
   font-weight: 700;
   color: var(--headline);
 }
+nav.scroll a h2{
+  color: var(--brand-light);
+}
 
 nav a h2 span {
   font-weight: 800;
   color: var(--primary-color);
+}
+
+nav.scroll a h2 span {
+  color: var(--brand-light);
 }
 
 nav img {
@@ -67,7 +94,7 @@ nav img {
 header::before { /*cria um elemento antes do conteúdo do header*/
   content: "";
   width: 100vw;
-  height: 1080rem;
+  height: calc(1080rem + var(--nav-height));
   background-color: var(--brand-light);
   
   display: block;
@@ -81,7 +108,7 @@ header {
   width: 375rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 42rem;
+  margin-top: calc(42rem + var(--nav-height));
 }
 
 
