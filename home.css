@@ -35,7 +35,9 @@ body {
 
 .wrapper {
   width: 375rem;
-  margin-inline: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-inline: 24rem;
 }
 
 /* ======= NAVIGATION ============================================ */
@@ -45,7 +47,6 @@ nav {
   justify-content: space-between;
 
   height: var(--nav-height);
-  padding: 24rem 16rem;
 
   position: fixed;
   top: 0;
@@ -55,6 +56,7 @@ nav {
 
 nav a h2 {
   font-family: 'Poppins', sans-serif;
+  font-size: 36rem;
   font-weight: 600;
   color: var(--headline);
 }
@@ -66,9 +68,6 @@ nav a h2 span {
 
 nav svg {
   cursor: pointer;
-
-  /* height: 23rem;
-  width: 23rem; */
 }
 
 /* ======= HEADER =========================================== */
