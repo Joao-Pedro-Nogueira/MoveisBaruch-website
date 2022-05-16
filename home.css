@@ -35,7 +35,9 @@ body {
 
 .wrapper {
   width: 375rem;
-  margin-inline: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-inline: 24rem;
 }
 
 /* ======= NAVIGATION ============================================ */
@@ -45,7 +47,6 @@ nav {
   justify-content: space-between;
 
   height: var(--nav-height);
-  padding: 24rem 16rem;
 
   position: fixed;
   top: 0;
@@ -53,18 +54,11 @@ nav {
   transform: translateX(-50%);
 }
 
-nav.scroll {
-  background-color: var(--primary-color);
-}
-
 nav a h2 {
   font-family: 'Poppins', sans-serif;
+  font-size: 36rem;
   font-weight: 600;
   color: var(--headline);
-}
-
-nav.scroll a h2 {
-  color: var(--brand-light);
 }
 
 nav a h2 span {
@@ -72,19 +66,8 @@ nav a h2 span {
   color: var(--primary-color);
 }
 
-nav.scroll a h2 span {
-  color: var(--brand-light);
-}
-
 nav svg {
   cursor: pointer;
-
-  /* height: 23rem;
-  width: 23rem; */
-}
-
-nav.scroll svg {
-  color: var(--brand-light);
 }
 
 /* ======= HEADER =========================================== */
@@ -94,7 +77,8 @@ header::before { /*cria um elemento antes do conteúdo do header*/
   background-color: var(--brand-light);
 
   width: 100vw;
-  height: calc(1080rem + var(--nav-height));
+  /* height: 1127.525rem; */
+  height: calc(1168.69rem + var(--nav-height));
   
   display: block;
   position: absolute;
@@ -105,6 +89,9 @@ header::before { /*cria um elemento antes do conteúdo do header*/
 
 header {
   margin-top: calc(41rem + var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -163,6 +150,7 @@ header button:hover {
 
 header #home-mobile-img {
   width: 375rem;
+  margin-bottom: 18rem;
 }
 
 /* ======= STATS ============================================ */
@@ -186,4 +174,3 @@ header #home-mobile-img {
 .stat p {
   margin: 0;
 }
-
