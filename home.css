@@ -43,8 +43,7 @@ body {
 /* ======= NAVIGATION ============================================ */
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
 
   height: var(--nav-height);
 
@@ -54,6 +53,17 @@ nav {
   transform: translateX(-50%);
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.scroll {
+  background-color: var(--primary-color);
+  width: 100vw;
+}
+
 nav a h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 36rem;
@@ -61,13 +71,25 @@ nav a h2 {
   color: var(--headline);
 }
 
+nav.scroll a h2 {
+  color: white;
+}
+
 nav a h2 span {
   font-weight: 700;
   color: var(--primary-color);
 }
 
+nav.scroll a h2 span {
+  color: white;
+}
+
 nav svg {
   cursor: pointer;
+}
+
+nav.scroll svg path {
+  stroke: white;
 }
 
 /* ======= HEADER =========================================== */
