@@ -93,8 +93,7 @@ header::before { /*cria um elemento antes do conteúdo do header*/
   background-color: var(--brand-light);
 
   width: 100vw;
-  /* height: 1127.525rem; */
-  height: calc(1168.69rem + var(--nav-height));
+  height: calc(1080rem + var(--nav-height));
   
   display: block;
   position: absolute;
@@ -105,9 +104,6 @@ header::before { /*cria um elemento antes do conteúdo do header*/
 
 header {
   margin-top: calc(41rem + var(--nav-height));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 
@@ -166,7 +162,6 @@ header button:hover {
 
 header #home-mobile-img {
   width: 375rem;
-  margin-bottom: 18rem;
 }
 
 /* ======= STATS ============================================ */
