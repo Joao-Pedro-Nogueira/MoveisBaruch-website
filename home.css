@@ -35,67 +35,50 @@ body {
 
 .wrapper {
   width: 375rem;
-  height: var(--nav-height); 
-  padding: 16rem 24rem;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
-/* ======= NAVEGATION ============================================ */
+/* ======= NAVIGATION ============================================ */
 nav {
-  font-family: 'Poppings', sans-serif;
-  
   display: flex;
-  
+  align-items: center;
+  justify-content: space-between;
+
+  height: var(--nav-height);
+  padding: 24rem 16rem;
+
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
-nav.wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-nav.scroll {
-  background: var(--primary-color);
-  width: 100vw;
-  position: fixed;
-  top: 0;
-}
-
 nav a h2 {
-  font-size: 33rem;
-  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   color: var(--headline);
-}
-nav.scroll a h2{
-  color: var(--brand-light);
 }
 
 nav a h2 span {
-  font-weight: 800;
+  font-weight: 700;
   color: var(--primary-color);
 }
 
-nav.scroll a h2 span {
-  color: var(--brand-light);
+nav svg {
+  cursor: pointer;
+
+  /* height: 23rem;
+  width: 23rem; */
 }
 
-nav img {
-  height: 25rem;
-  width: 25rem;
-}
-
-/* ======= HEADER ============================================ */
+/* ======= HEADER =========================================== */
 header::before { /*cria um elemento antes do conteúdo do header*/
   content: "";
+
+  background-color: var(--brand-light);
+
   width: 100vw;
   height: calc(1080rem + var(--nav-height));
-  background-color: var(--brand-light);
   
   display: block;
   position: absolute;
@@ -105,10 +88,7 @@ header::before { /*cria um elemento antes do conteúdo do header*/
 }
 
 header {
-  width: 375rem;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: calc(42rem + var(--nav-height));
+  margin-top: calc(41rem + var(--nav-height));
 }
 
 
@@ -136,7 +116,7 @@ header p {
   
 }
 
-button {
+header button {
   background: var(--primary-color);
   width: 263rem;
   height: 62rem;
@@ -169,6 +149,7 @@ header #home-mobile-img {
   width: 375rem;
 }
 
+/* ======= STATS ============================================ */
 .stats {
   width: 327rem;
   padding-block: 40rem;
