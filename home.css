@@ -60,7 +60,7 @@ nav {
 .wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 nav.scroll {
@@ -88,18 +88,6 @@ nav.scroll a h2 span {
   color: white;
 }
 
-nav button{
-  border: none;
-  background: none;
-}
-
-nav button svg {
-  cursor: pointer;
-}
-
-nav.scroll button svg path {
-  stroke: white;
-}
 
 /* ======= HEADER =========================================== */
 header::before { /*cria um elemento antes do conteúdo do header*/
@@ -108,8 +96,7 @@ header::before { /*cria um elemento antes do conteúdo do header*/
   background-color: var(--brand-light);
 
   width: 100%;
-  /* height: 1127.525rem; */
-  height: calc(1168.69rem + var(--nav-height));
+  height: calc(1290.39rem + var(--nav-height));
   
   display: block;
   position: absolute;
@@ -150,14 +137,19 @@ header p {
   
 }
 
+header a {
+  text-decoration: none;
+  color: white;
+}
+
 header button {
   background: var(--primary-color);
-  width: 263rem;
   height: 62rem;
   
   border: none;
   border-radius: 40rem;
   margin-bottom: 60rem;
+  padding-inline: 20rem;
   
   color: white;
   text-transform: uppercase;
@@ -175,8 +167,18 @@ header button {
   transition: 0.3s;
 }
 
+header button.insta-button-home {
+  width: 300rem;
+  background: linear-gradient(45deg,#5750bfde 25%, #be3183da 50%, #fe4141d7 75%, #fdb124da 100%);
+}
+
 header button:hover {
   background-color: var(--button-hover);
+}
+
+header button img {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 header #home-mobile-img {
