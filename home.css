@@ -15,6 +15,7 @@
   --paragraph: hsla(210, 9%, 31%, 1);
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
+  --bg-light: hsl(180, 14%, 97%);
 
   /* Variáveis de navegação */
   --nav-height: 72rem;
@@ -31,6 +32,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 16rem;
   text-align: center;
+  background-color: var(--bg-light);
 }
 
 .wrapper {
@@ -38,10 +40,17 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding-inline: 24rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
 button {
   cursor: pointer;
+}
+
+section {
+  padding-block: 100rem;
 }
 
 /* ======= NAVIGATION ============================================ */
@@ -57,7 +66,7 @@ nav {
   transform: translateX(-50%);
 }
 
-.wrapper {
+nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +105,7 @@ header::before { /*cria um elemento antes do conteúdo do header*/
   background-color: var(--brand-light);
 
   width: 100%;
-  height: calc(1290.39rem + var(--nav-height));
+  height: calc(1290.39rem + var(--nav-height) + 159.923rem);
   
   display: block;
   position: absolute;
@@ -183,7 +192,11 @@ header button img {
 
 header #home-mobile-img {
   width: 375rem;
+  /* height: 402.09rem; */
   margin-bottom: 18rem;
+  border: 5px solid var(--primary-color);
+  /* border: 5px solid black; */
+  border-radius: 10rem;
 }
 
 /* ======= STATS ============================================ */
@@ -193,6 +206,7 @@ header #home-mobile-img {
   margin-inline: auto;
   background-color: var(--brand-beige);
   border: 1px solid var(--brand-light);
+  border-radius: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,4 +220,40 @@ header #home-mobile-img {
 
 .stat p {
   margin: 0;
+}
+
+/* ======= SEVICES ============================================ */
+
+#services header h4 {
+  font-size: 14rem;
+  line-height: 150%;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 16rem;
+}
+
+#services header h2 {
+  font-size: 30rem;
+  line-height: 39rem;
+  color: var(--headline);
+  margin-bottom: 60rem;
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+}
+
+#services .card {
+  padding: 24rem;
+  text-align: left;
+  background: white;
+  border: 1px solid var(--brand-light);
+  border-radius: 6rem;
+}
+
+#services .card h3 {
+  margin-block: 16rem;
 }
