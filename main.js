@@ -8,3 +8,9 @@ function onScroll() {
     return nav.classList.add('scroll')
   }
 }
+
+ScrollReveal({
+  origin: 'bottom',
+  distance: '100px',
+  duration: 750
+}).reveal('#home')

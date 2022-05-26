@@ -16,7 +16,7 @@
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
   --bg-light: hsl(180, 14%, 97%);
-
+  
   /* Variáveis de navegação */
   --nav-height: 72rem;
   
@@ -57,9 +57,9 @@ section {
 nav {
   display: flex;
   flex-direction: row;
-
+  
   height: var(--nav-height);
-
+  
   position: fixed;
   top: 0;
   left: 50%;
@@ -98,14 +98,14 @@ nav.scroll a h2 span {
 }
 
 
-/* ======= HEADER =========================================== */
-header::before { /*cria um elemento antes do conteúdo do header*/
+/* ======= HOME =========================================== */
+#home::before { /*cria um elemento antes do conteúdo do header*/
   content: "";
-
+  
   background-color: var(--brand-light);
-
+  
   width: 100%;
-  height: calc(1290.39rem + var(--nav-height) + 159.923rem);
+  height: 1565.32rem;
   
   display: block;
   position: absolute;
@@ -114,21 +114,21 @@ header::before { /*cria um elemento antes do conteúdo do header*/
   z-index: -1;
 }
 
-header {
-  margin-top: calc(41rem + var(--nav-height));
+#home {
+  padding-top: calc(41rem + var(--nav-height));
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 
-header h4 {
+#home h4 {
   font-size: 14rem;
   color: var(--primary-color);
   margin-bottom: 16rem;
 }
 
-header h1 {
+#home h1 {
   font-size: 34rem;
   color: var(--headline);
   line-height: 130%;
@@ -137,7 +137,7 @@ header h1 {
   
 }
 
-header p {
+#home p {
   font-size: 18rem;
   line-height: 150%;
   font-weight: 400;
@@ -146,18 +146,18 @@ header p {
   
 }
 
-header a {
+#home a {
   text-decoration: none;
   color: white;
 }
 
-header button {
+#home button {
   background: var(--primary-color);
   height: 62rem;
   
   border: none;
   border-radius: 40rem;
-  margin-bottom: 60rem;
+  margin-bottom: 30rem;
   padding-inline: 20rem;
   
   color: white;
@@ -176,24 +176,24 @@ header button {
   transition: 0.3s;
 }
 
-header button.insta-button-home {
+#home button.insta-button-home {
   width: 300rem;
   background: linear-gradient(45deg,#5750bfde 25%, #be3183da 50%, #fe4141d7 75%, #fdb124da 100%);
 }
 
-header button:hover {
+#home button:hover {
   background-color: var(--button-hover);
 }
 
-header button img {
+#home button img {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-header #home-mobile-img {
+#home #home-mobile-img {
   width: 375rem;
   /* height: 402.09rem; */
-  margin-bottom: 18rem;
+  margin-bottom: 78rem;
   border: 5px solid var(--primary-color);
   /* border: 5px solid black; */
   border-radius: 10rem;
