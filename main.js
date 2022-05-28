@@ -12,5 +12,15 @@ function onScroll() {
 ScrollReveal({
   origin: 'bottom',
   distance: '100px',
-  duration: 750
-}).reveal('#home')
+  duration: 1000
+}).reveal(`
+nav,
+  #home, 
+  #home h4, 
+  #home a, 
+  #home .stat, 
+  #services,
+  #services h4, 
+  #services .card,
+  #about,
+  #about h4`)
