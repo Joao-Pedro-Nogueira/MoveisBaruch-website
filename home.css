@@ -250,7 +250,7 @@ nav.scroll a h2 span {
   margin: 0;
 }
 
-/* ======= SEVICES ============================================ */
+/* ======= SERVICES ============================================ */
 
 #services header h2 {
   margin-bottom: 60rem;
@@ -281,7 +281,7 @@ nav.scroll a h2 span {
   width: 277rem;
 }
 
-/* ======= SEVICES ============================================ */
+/* ======= ABOUT ============================================ */
 #about {
   background: var(--brand-beige);
   text-align: left;
@@ -294,6 +294,11 @@ nav.scroll a h2 span {
 #about .content p {
   margin-top: 24rem;
   margin-bottom: 60rem;
+}
+
+/* ======= CONTACT ============================================ */
+#contact {
+  width: 375rem;
 }
 
 /*  */
