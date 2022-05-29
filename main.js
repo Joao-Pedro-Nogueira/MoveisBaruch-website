@@ -22,5 +22,8 @@ nav,
   #services,
   #services h4, 
   #services .card,
+  #services h3,
+  #services p,
+  #services img,
   #about,
   #about h4`)
