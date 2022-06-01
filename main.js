@@ -26,4 +26,7 @@ nav,
   #services p,
   #services img,
   #about,
-  #about h4`)
+  #about h4,
+  #contact h2,
+  #contact li,
+  #contact button`)
