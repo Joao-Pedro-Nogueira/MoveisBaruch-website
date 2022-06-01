@@ -43,6 +43,24 @@ body {
 
 button {
   cursor: pointer;
+  background: var(--primary-color);
+  padding: 16rem 32rem;
+  width: fit-content;
+  border: none;
+  border-radius: 40rem;
+  margin-bottom: 40rem;
+  padding-inline: 20rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16rem;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  transition: 0.3s;
 }
 
 img {
@@ -172,28 +190,8 @@ nav.scroll a h2 span {
   color: white;
 }
 
-#home button {
-  background: var(--primary-color);
-  height: 62rem;
-  border: none;
-  border-radius: 40rem;
-  margin-bottom: 30rem;
-  padding-inline: 20rem;
-  color: white;
-  text-transform: uppercase;
-  font-size: 14rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16rem;
-  cursor: pointer;
-  margin-right: auto;
-  margin-left: auto;
-  transition: 0.3s;
-}
-
 #home button.insta-button-home {
-  width: 300rem;
+  padding: 16rem 32rem;
   background: linear-gradient(45deg,#5750bfde 25%, #be3183da 50%, #fe4141d7 75%, #fdb124da 100%);
 }
 
@@ -289,4 +287,61 @@ nav.scroll a h2 span {
 #about .content img {
   border: 3px solid var(--brand-light);
   border-radius: 6rem;
+}
+
+/* ======= CONTACT ============================================ */
+
+#contact header {
+  margin-bottom: 32rem;
+}
+
+#contact .content ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16rem;
+  margin-bottom: 32rem;
+}  
+
+#contact ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  
+  gap: 8rem;
+  margin-bottom: 5rem;
+}
+
+#contact .content a {
+  text-decoration: none;
+}
+
+#contact .content button:hover {
+  background-color: var(--button-hover);
+}
+
+/* ======= FOOTER ============================================ */
+
+footer {
+  background-color: var(--primary-color);
+  padding-block: 60rem;
+  text-align: left;
+}
+
+footer h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28rem;
+  font-weight: 600;
+  color: var(--brand-beige);
+  margin-bottom: 24rem;
+}
+
+footer h2 a {
+  text-decoration: none;
+}
+
+footer p {
+  color: white;
+  line-height: 2;
 }
