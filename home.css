@@ -61,6 +61,7 @@ button {
   margin-right: auto;
   margin-left: auto;
   transition: 0.3s;
+  box-shadow: 0 0 0.5em rgba(128, 128, 128, 0.5);
 }
 
 img {
@@ -111,7 +112,6 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
-
   z-index: 100;
 }
 
@@ -123,7 +123,7 @@ nav .wrapper {
 
 nav.scroll {
   background-color: var(--primary-color);
-
+  box-shadow: 0 0 1em black;
 }
 
 nav a h2 {
@@ -233,7 +233,7 @@ nav.scroll a h2 span {
   color: var(--headline);
 }
 
-.stat p {
+#home .stat p {
   margin: 0;
 }
 
@@ -255,6 +255,7 @@ nav.scroll a h2 span {
   background: white;
   border: 1px solid var(--brand-light);
   border-radius: 6rem;
+  box-shadow: 0 0 0.5em rgba(128, 128, 128, 0.5);
 }
 
 #services .card h3 {
@@ -342,6 +343,6 @@ footer h2 a {
 }
 
 footer p {
-  color: white;
+  color: var(--brand-beige);
   line-height: 2;
 }
