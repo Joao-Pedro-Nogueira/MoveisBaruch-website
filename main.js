@@ -14,7 +14,7 @@ ScrollReveal({
   distance: '100px',
   duration: 1000
 }).reveal(`
-nav,
+  nav,
   #home, 
   #home h4, 
   #home a, 
